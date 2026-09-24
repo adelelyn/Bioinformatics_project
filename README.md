@@ -130,5 +130,21 @@ Residue and χ1 extraction
       ↓
 Sequence windows (65 residues)
       ↓
-Structural
+Structural feature extraction
+      ↓
+φ / ψ angles + Cα distances
+      ↓
+Transformer-based model
+      ↓
+36-class χ1 prediction
+      ↓
+Exact and ±k-bin evaluation
 ```
+
+## Key Findings
+
+The experiments indicate that protein backbone geometry provides useful information for side-chain conformation prediction.
+
+A sequence-based Transformer establishes a strong baseline, while adding backbone angles and pairwise Cα distances substantially improves prediction accuracy.
+
+The best model increased validation accuracy within ±3 angular bins from approximately **0.62 to 0.72**.
